@@ -4,5 +4,5 @@
 
 ## Site
 
-- **GitHub Pages**: https://yugosasaki.github.io/repo-portfolio/
-- **GitLab Pages**: https://yugosasaki.gitlab.io/repo-portfolio/
+- **GitHub Pages**: https://kwrkb.github.io/repo-portfolio/
+- **GitLab Pages**: https://kwrkb.gitlab.io/repo-portfolio/
