@@ -16,6 +16,8 @@
       --badge-ts: #3178c6;
       --badge-py: #3776ab;
       --badge-html: #e34c26;
+      --badge-js: #f1e05a;
+      --badge-cs: #178600;
     }
 
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -148,6 +150,26 @@
     .badge-ts   { background: var(--badge-ts); }
     .badge-py   { background: var(--badge-py); }
     .badge-html { background: var(--badge-html); }
+    .badge-js   { background: var(--badge-js); color: #1f2328; }
+    .badge-cs   { background: var(--badge-cs); }
+
+    .card-meta {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .card-meta .site {
+      margin-left: auto;
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 0.8rem;
+    }
+
+    .card-meta .site:hover {
+      text-decoration: underline;
+    }
 
     /* Footer */
     footer {
@@ -170,7 +192,7 @@
   <div class="container">
     <header>
       <h1>yugo sasaki</h1>
-      <p>Software Engineer — Go / TypeScript / Python でツール・Webアプリを作っています</p>
+      <p>Software Engineer — Go / TypeScript / Python / C# でツール・Webアプリを作っています</p>
       <div class="links">
         <a href="https://github.com/kwrkb" target="_blank" rel="noopener">GitHub</a>
         <a href="https://gitlab.com/kwrkb" target="_blank" rel="noopener">GitLab</a>
@@ -183,34 +205,82 @@
         <div class="card">
           <div class="card-header">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"/></svg>
-            <a href="https://github.com/kwrkb/asql" target="_blank" rel="noopener">asql</a>
+            <a href="https://github.com/kwrkb/rdp-host-info" target="_blank" rel="noopener">rdp-host-info</a>
           </div>
-          <p>Lightweight TUI SQL client (SQLite/MySQL/PostgreSQL)</p>
-          <div><span class="badge badge-go">Go</span></div>
+          <p>リモートデスクトップの接続情報とホストの準備状況をひと目で確認できる Windows CLI</p>
+          <div class="card-meta"><span class="badge badge-go">Go</span></div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"/></svg>
+            <a href="https://github.com/kwrkb/zailoop" target="_blank" rel="noopener">zailoop</a>
+          </div>
+          <p>予算事業レビューシート CSV から 1 事業の予算ライフサイクル（要求→成立→執行→決算→評価→翌年度反映）を可視化する Go CLI（非公式）</p>
+          <div class="card-meta"><span class="badge badge-go">Go</span> <a class="site" href="https://zailoop.kwrkb.workers.dev" target="_blank" rel="noopener">サイト ↗</a></div>
         </div>
         <div class="card">
           <div class="card-header">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"/></svg>
             <a href="https://github.com/kwrkb/ssh-pushkey" target="_blank" rel="noopener">ssh-pushkey</a>
           </div>
-          <p>Windows OpenSSH向けSSH公開鍵配置ツール</p>
-          <div><span class="badge badge-go">Go</span></div>
+          <p>Windows OpenSSH 向けの SSH 公開鍵配置ツール（ssh-copy-id の代替）</p>
+          <div class="card-meta"><span class="badge badge-go">Go</span></div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"/></svg>
+            <a href="https://github.com/kwrkb/asql" target="_blank" rel="noopener">asql</a>
+          </div>
+          <p>データを眺めるための軽量 TUI SQL クライアント（SQLite / MySQL / PostgreSQL）</p>
+          <div class="card-meta"><span class="badge badge-go">Go</span></div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"/></svg>
+            <a href="https://github.com/kwrkb/agy-plugins" target="_blank" rel="noopener">agy-plugins</a>
+          </div>
+          <p>Antigravity CLI（agy）向けの GitHub / GitLab MCP プラグイン</p>
+          <div class="card-meta"><span class="badge badge-go">Go</span></div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"/></svg>
+            <a href="https://github.com/kwrkb/goup" target="_blank" rel="noopener">goup</a>
+          </div>
+          <p>Go ツールチェーン（/usr/local/go）を更新する CLI</p>
+          <div class="card-meta"><span class="badge badge-go">Go</span></div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"/></svg>
+            <a href="https://github.com/kwrkb/gowol" target="_blank" rel="noopener">gowol</a>
+          </div>
+          <p>ARP 検索とエイリアス管理に対応した Wake-on-LAN CLI（Linux / Android）</p>
+          <div class="card-meta"><span class="badge badge-go">Go</span></div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"/></svg>
+            <a href="https://github.com/kwrkb/cli-help-db" target="_blank" rel="noopener">cli-help-db</a>
+          </div>
+          <p>CLI コマンドの --help を事前にデータベース化し、Claude Code が PreToolUse フック経由で正確なオプションを即座に参照できるようにするツール</p>
+          <div class="card-meta"><span class="badge badge-go">Go</span></div>
         </div>
         <div class="card">
           <div class="card-header">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"/></svg>
             <a href="https://github.com/kwrkb/helptree" target="_blank" rel="noopener">helptree</a>
           </div>
-          <p>Interactive TUI viewer that visualizes CLI --help output as a navigable tree structure</p>
-          <div><span class="badge badge-go">Go</span></div>
+          <p>CLI の --help 出力をツリー構造で表示・操作できる対話型 TUI ビューア</p>
+          <div class="card-meta"><span class="badge badge-go">Go</span></div>
         </div>
         <div class="card">
           <div class="card-header">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"/></svg>
-            <a href="https://github.com/kwrkb/repo-hand-off" target="_blank" rel="noopener">repo-hand-off</a>
+            <a href="https://github.com/kwrkb/fnm-sync" target="_blank" rel="noopener">fnm-sync</a>
           </div>
-          <p>Export and share development state for seamless handoffs between humans and AI</p>
-          <div><span class="badge badge-go">Go</span></div>
+          <p>fnm で管理する Node のバージョン間で、グローバル npm パッケージを現在のバージョンへ同期する CLI</p>
+          <div class="card-meta"><span class="badge badge-go">Go</span></div>
         </div>
       </div>
     </section>
@@ -221,10 +291,18 @@
         <div class="card">
           <div class="card-header">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"/></svg>
+            <a href="https://github.com/kwrkb/schedule-gen" target="_blank" rel="noopener">schedule-gen</a>
+          </div>
+          <p>人数とシフト数を入れるだけで1ヶ月シフトのたたき台を作る Web ツール。焼きなまし法・依存ゼロ・クライアントサイド完結。</p>
+          <div class="card-meta"><span class="badge badge-ts">TypeScript</span> <a class="site" href="https://kwrkb.github.io/schedule-gen/" target="_blank" rel="noopener">サイト ↗</a></div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"/></svg>
             <a href="https://github.com/kwrkb/visual-echo" target="_blank" rel="noopener">visual-echo</a>
           </div>
-          <p>AI-powered image telephone game</p>
-          <div><span class="badge badge-ts">TypeScript</span></div>
+          <p>AI を使った画像版の伝言ゲーム</p>
+          <div class="card-meta"><span class="badge badge-ts">TypeScript</span></div>
         </div>
         <div class="card">
           <div class="card-header">
@@ -232,7 +310,7 @@
             <a href="https://github.com/kwrkb/gen-jigsaw" target="_blank" rel="noopener">gen-jigsaw</a>
           </div>
           <p>生成AI×協働アウトペイント。タイルを上下左右に拡張して世界を作る。</p>
-          <div><span class="badge badge-ts">TypeScript</span></div>
+          <div class="card-meta"><span class="badge badge-ts">TypeScript</span></div>
         </div>
         <div class="card">
           <div class="card-header">
@@ -240,7 +318,21 @@
             <a href="https://github.com/kwrkb/map-reviews-timeline" target="_blank" rel="noopener">map-reviews-timeline</a>
           </div>
           <p>Google Mapsレビューをタイムライン表示するWebアプリ（TypeScript + Vite）</p>
-          <div><span class="badge badge-ts">TypeScript</span></div>
+          <div class="card-meta"><span class="badge badge-ts">TypeScript</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>JavaScript</h2>
+      <div class="cards">
+        <div class="card">
+          <div class="card-header">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"/></svg>
+            <a href="https://github.com/kwrkb/kurabebako" target="_blank" rel="noopener">kurabebako</a>
+          </div>
+          <p>AIツール・開発環境・CLI・SaaS・サーバーの比較まとめサイト（Hugo + Cloudflare Workers Static Assets）</p>
+          <div class="card-meta"><span class="badge badge-js">JavaScript</span> <a class="site" href="https://kurabebako.com/" target="_blank" rel="noopener">サイト ↗</a></div>
         </div>
       </div>
     </section>
@@ -251,18 +343,26 @@
         <div class="card">
           <div class="card-header">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"/></svg>
+            <a href="https://github.com/kwrkb/PMDA-SQlite" target="_blank" rel="noopener">PMDA-SQlite</a>
+          </div>
+          <p>PMDA医療用医薬品の添付文書XMLをSQLiteデータベースに変換するパイプライン（公式XSLT準拠の本文Markdown化・FTS5全文検索対応）</p>
+          <div class="card-meta"><span class="badge badge-py">Python</span></div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"/></svg>
             <a href="https://github.com/kwrkb/worklog-mcp" target="_blank" rel="noopener">worklog-mcp</a>
           </div>
           <p>AIアシスタント向け作業ログMCPサーバー — Markdownで保存・検索</p>
-          <div><span class="badge badge-py">Python</span></div>
+          <div class="card-meta"><span class="badge badge-py">Python</span></div>
         </div>
         <div class="card">
           <div class="card-header">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"/></svg>
             <a href="https://github.com/kwrkb/SQLiteView" target="_blank" rel="noopener">SQLiteView</a>
           </div>
-          <p>SQLite viewer (PyQt6)</p>
-          <div><span class="badge badge-py">Python</span></div>
+          <p>PyQt6 製の実験的な SQLite ビューア</p>
+          <div class="card-meta"><span class="badge badge-py">Python</span></div>
         </div>
         <div class="card">
           <div class="card-header">
@@ -270,7 +370,21 @@
             <a href="https://github.com/kwrkb/bmi-cli" target="_blank" rel="noopener">bmi-cli</a>
           </div>
           <p>BMI計算CLI</p>
-          <div><span class="badge badge-py">Python</span></div>
+          <div class="card-meta"><span class="badge badge-py">Python</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>C#</h2>
+      <div class="cards">
+        <div class="card">
+          <div class="card-header">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"/></svg>
+            <a href="https://github.com/kwrkb/taskctl" target="_blank" rel="noopener">taskctl</a>
+          </div>
+          <p>Windows タスクスケジューラの診断ツール。タスクが失敗した原因を特定し、次の対処を示す（読み取り専用・日英対応）</p>
+          <div class="card-meta"><span class="badge badge-cs">C#</span></div>
         </div>
       </div>
     </section>
@@ -283,12 +397,11 @@
             <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"/></svg>
             <a href="https://github.com/kwrkb/fake-weather" target="_blank" rel="noopener">fake-weather</a>
           </div>
-          <p>なんにも根拠がない天気表示</p>
-          <div><span class="badge badge-html">HTML</span></div>
+          <p>なんにも根拠がない天気を表示します</p>
+          <div class="card-meta"><span class="badge badge-html">HTML</span></div>
         </div>
       </div>
     </section>
-
     <footer>
       &copy; 2026 yugo sasaki
     </footer>
